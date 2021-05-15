@@ -35,7 +35,7 @@ const Ordering = () => (
               <TableCell>
                 <Box m={1}>
                   <Button className={styles.link} component={Link} to={`${process.env.PUBLIC_URL}/ordering/new`}
-                    variant="contained" color="secondary" style={{maxWidth: '150px', minWidth: '150px'}}>New order</Button>
+                    variant="contained" color="secondary">New order</Button>
                 </Box>
               </TableCell>
               <TableCell>
@@ -57,7 +57,7 @@ const Ordering = () => (
               <TableCell>
                 <Box m={1}>
                   <Button className={styles.link}
-                    variant="contained" color="secondary" style={{maxWidth: '150px', minWidth: '150px'}}>Change status</Button>
+                    variant="contained" color="secondary">Change status</Button>
                 </Box>
               </TableCell>
             </TableRow>

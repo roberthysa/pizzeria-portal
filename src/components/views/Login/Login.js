@@ -11,7 +11,7 @@ const Login = () => (
     <div>
       <Box mt={4}>
         <Button className={styles.link} component={Link} exact to={`${process.env.PUBLIC_URL}/`}
-          variant="contained" color="secondary" style={{maxWidth: '300px', minWidth: '300px'}}>Return to Dashboard</Button>
+          variant="contained" color="secondary">Return to Dashboard</Button>
       </Box>
     </div>
   </div>
