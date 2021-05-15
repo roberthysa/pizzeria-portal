@@ -7,7 +7,7 @@ import Tables from './components/views/Tables/Tables';
 import TablesBooking from './components/views/Tables/TablesBooking';
 import TablesEvent from './components/views/Tables/TablesEvent';
 import Ordering from './components/views/Ordering/Ordering';
-import NewOrder from './components/views/Ordering/NewOrder';
+import NewOrder from './components/views/Ordering/NewOrderContainer';
 import OrderID from './components/views/Ordering/OrderID';
 import Kitchen from './components/views/Kitchen/Kitchen';
 import {createMuiTheme} from '@material-ui/core/styles';

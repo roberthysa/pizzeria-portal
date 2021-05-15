@@ -1,6 +1,7 @@
-import {combineReducers, createStore} from 'redux';
-
+import {combineReducers, createStore, applyMiddleware} from 'redux';
 import productReducer from './productRedux';
+import thunk from 'redux-thunk';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
 // define initial state and shallow-merge initial data
 const initialState = {
@@ -31,7 +32,9 @@ const combinedReducers = combineReducers(reducers);
 const store = createStore(
   combinedReducers,
   initialState,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  composeWithDevTools(
+  applyMiddleware(thunk)
+  )
 );
 
 export default store;

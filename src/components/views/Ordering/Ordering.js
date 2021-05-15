@@ -45,7 +45,7 @@ const Ordering = () => (
                   </Button>
                 )}
               </TableCell>
-              <TableCell className={styles.cell_ready}>
+              <TableCell bgcolor="success.main">
                 {row.status}
               </TableCell>
               <TableCell>
