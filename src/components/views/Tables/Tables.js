@@ -9,11 +9,11 @@ const Tables = () => (
     <div>
       <Box m={1}>
         <Button className={styles.link} component={Link} to={`${process.env.PUBLIC_URL}/tables/booking/:id`}
-          variant="contained" color="secondary" style={{maxWidth: '150px', minWidth: '150px'}}>Book table</Button>
+          variant="contained" color="secondary">Book table</Button>
       </Box>
       <Box m={1}>
         <Button className={styles.link} component={Link} to={`${process.env.PUBLIC_URL}/tables/event/:id`}
-          variant="contained" color="secondary" style={{maxWidth: '150px', minWidth: '150px'}}>Event table</Button>
+          variant="contained" color="secondary">Event table</Button>
       </Box>
     </div>
   </div>
