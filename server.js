@@ -10,6 +10,18 @@ const middlewares = jsonServer.defaults({
 });
 const port = process.env.PORT || 3131;
 
+const cors = require('cors');
+
+server.use(
+ cors({
+ origin: true,
+ credentials: true,
+ preflightContinue: false,
+ methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+ })
+);
+server.options('*', cors());
+
 server.get(/\/panel.*/, (req,res) =>{
   if(req.url == '/panel'){
     req.url += '/';
